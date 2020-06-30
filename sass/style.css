@@ -1,0 +1,609 @@
+@charset "UTF-8";
+/* responsive téléphone portable*/
+body {
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.container {
+  display: block;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 0.9em;
+  color: #414141;
+  padding: 100px;
+}
+
+header {
+  background-color: #579c87;
+  text-align: center;
+  padding: 1.5em;
+}
+
+header .main-header {
+  height: 1rem;
+  width: auto;
+  position: relative;
+  background-color: #579c87;
+}
+
+header .main-header > a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #fdcb46;
+}
+
+header .note {
+  margin: auto;
+  padding: 35px border-style none;
+}
+
+/* navigations menus*/
+.menu_mini, nav .nav__link__1, nav .nav__link__1--2, nav .nav__link__1--3, nav .nav__link__1--4 {
+  -webkit-box-shadow: 0 0 7px #dddddd;
+          box-shadow: 0 0 7px #dddddd;
+  width: 280px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu, nav .note, nav .bloc-menu__1, nav .bloc-menu__2, nav .bloc-menu__3, nav .bloc-menu__4, nav .menu_kalam__1, nav .menu_kalam__3, nav .menu_kalam__4, nav .menu_vidaloka__1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5em;
+}
+
+nav ul {
+  padding: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  max-width: 800px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav li {
+  margin: 25px;
+  width: 200px;
+  height: 282px;
+  text-align: center;
+}
+
+nav .nav__link__1 {
+  background-color: #fcdfdb;
+  font-family: "Devonshire","Lucida Sans Unicode", Arial, sans-serif;
+}
+
+nav .nav__link__1--2 {
+  background-color: #fff5fe;
+  font-family: "Kurale";
+}
+
+nav .nav__link__1--3 {
+  background-color: #eef0f0;
+  font-family: "Kalam", "cursive";
+}
+
+nav .nav__link__1--4 {
+  background-color: #fdfffd;
+  font-family: "Trebuchet MS";
+}
+
+nav .note {
+  text-align: center;
+  width: 45px;
+  margin-left: 42%;
+  margin-top: 30%;
+  padding-top: 10%;
+}
+
+nav .bloc-menu__1 {
+  color: #3c1218;
+}
+
+nav .bloc-menu__2 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#c67412), to(#6e4ccc));
+  background: linear-gradient(to bottom right, #c67412, #6e4ccc);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  padding-top: 60%;
+}
+
+nav .bloc-menu__3 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
+  background: linear-gradient(to bottom right, #0431df, #0887fb);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-top: 60%;
+  font-family: "Dancing Script";
+}
+
+nav .bloc-menu__4 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
+  background: linear-gradient(to bottom right, #42973c, #bfff7e);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  padding-top: 60%;
+}
+
+nav .menu_kalam__1 {
+  color: #3c1218;
+  font-size: 2.3rem;
+  font-family: "Kalam", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
+}
+
+nav .menu_kalam__3 {
+  font-family: "Kalam", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
+  background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
+  background: linear-gradient(to bottom right, #0431df, #0887fb);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+}
+
+nav .menu_kalam__4 {
+  font-family: "Kalam", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
+  background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
+  background: linear-gradient(to bottom right, #42973c, #bfff7e);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+}
+
+nav .menu_vidaloka {
+  font-family: "Vidaloka";
+}
+
+nav .menu_vidaloka__1 {
+  color: #c67412;
+  font-size: 2rem;
+}
+
+/* pages menus secondaires*/
+.menu_bigtypo, .menu-1, .menu-2, .menu-3, .menu-4 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.smartmenu, .menu-1, .menu-2, .menu-3, .menu-4 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 50%;
+  margin-left: 20%;
+  margin-top: auto;
+  padding: 4em;
+  -webkit-box-shadow: 0 0 7px #dddddd;
+          box-shadow: 0 0 7px #dddddd;
+}
+
+h2 {
+  font-family: "Devonshire","Lucida Sans Unicode", Arial, sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+  width: 100%;
+  height: 29px;
+  margin: 0;
+}
+
+.prix {
+  font-weight: bold;
+  margin-left: auto;
+  margin-top: auto;
+  font-size: 1em;
+}
+
+.description {
+  font-size: 1.5em;
+}
+
+.menu-1 {
+  background-color: #fcdfdb;
+  list-style-type: none;
+  font-family: "Kalam", "Trebuchet MS", Arial;
+}
+
+.menu-1 .typo01 {
+  color: #3c1218;
+}
+
+.notemusic {
+  width: 50px;
+}
+
+.notemusic-bas {
+  width: 36px;
+  margin-right: 5px;
+}
+
+.devonshire-bas {
+  font-family: "Devonshire","Lucida Sans Unicode", Arial, sans-serif;
+  font-size: 1.5em;
+}
+
+.menu-2 {
+  background-color: #fff5fe;
+  font-family: "Kurale";
+}
+
+.menu-2 .typo02 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#c67412), to(#6e4ccc));
+  background: linear-gradient(to bottom right, #c67412, #6e4ccc);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu-2 .typo02 .h2-menu-2 {
+  font-family: "Kurale";
+}
+
+.menu-3 {
+  background-color: #eef0f0;
+  font-family: "Kalam", "cursive";
+}
+
+.menu-3 .typo03 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0431df), to(#0887fb));
+  background-image: linear-gradient(0.25turn, #0431df, #0887fb);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu-3 .typo03 .h2-menu-3 {
+  font-family: "Dancing Script";
+}
+
+.title-1-menu-3, .title-2-menu-3, .title-3-menu-3 {
+  color: black;
+  margin-top: 2em;
+}
+
+.type__plats3 {
+  color: black;
+}
+
+.menu-4 {
+  background-color: #fdfffd;
+  font-family: "Kalam", "cursive";
+}
+
+.menu-4 .typo04 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
+  background: linear-gradient(to bottom right, #42973c, #bfff7e);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu-4 .typo04 .h2-menu4 {
+  font-family: "Kaushan Script";
+}
+
+.title-1-menu-4, .title-2-menu-4, .title-3-menu-4 {
+  color: black;
+  margin-top: 2em;
+}
+
+.type__plats4 {
+  color: black;
+}
+
+/* Format menu*/
+.menu-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 40px 0 10px 0;
+}
+
+.title, .title-1-menu-2, .title-2-menu-2, .title-3-menu-2 {
+  margin: 40px 0 10px 0;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.title:hover::after, .title-1-menu-2:hover::after, .title-2-menu-2:hover::after, .title-3-menu-2:hover::after,
+.title-1-menu-3:hover::after, .title-2-menu-3:hover::after, .title-3-menu-3:hover::after,
+.title-1-menu-4:hover::after, .title-2-menu-4:hover::after, .title-3-menu-4:hover::after {
+  width: 100%;
+  background: #000000;
+}
+
+h3::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+
+img {
+  width: 24%;
+  margin: 43px 0px 10px 0;
+}
+
+/* Mentions*/
+.mentions {
+  max-width: 518px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+.h2-mention {
+  font-size: 2em;
+  font-family: "Montserrat";
+  color: #000000;
+  margin: 30px 0 30px 0;
+}
+
+/* pied page*/
+.prochainement {
+  background: #579c87;
+  color: #fdcb46;
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 80px;
+  text-align: center;
+  font-family: "roboto";
+  font-size: 1.5em;
+  width: 250px;
+}
+
+.prochainement::after {
+  content: " .";
+  -webkit-animation: pointe 2s infinite;
+  animation: pointe 2s infinite;
+}
+
+@-webkit-keyframes pointe {
+  0%, 20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: #fdcb46;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 0.25em 0 0 #fdcb46, 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0.25em 0 0 #fdcb46, 0.5em 0 0 #fdcb46;
+  }
+}
+
+@keyframes pointe {
+  0%, 20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: #fdcb46;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 0.25em 0 0 #fdcb46, 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0.25em 0 0 #fdcb46, 0.5em 0 0 #fdcb46;
+  }
+}
+
+/* pied de page*/
+footer {
+  background-color: #579c87;
+  min-width: 268px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.foot {
+  font-family: "roboto";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 50px;
+  /* animations*/
+}
+
+.foot .text {
+  color: #fdcb46;
+  margin-top: 15px;
+}
+
+.foot .text:hover {
+  -webkit-animation: vibre 0.82s cubic-bezier(0.65, 0.23, 0.41, 0.79);
+  animation: vibre 0.82s cubic-bezier(0.65, 0.23, 0.41, 0.79);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+@-webkit-keyframes vibre {
+  0% {
+    -webkit-transform: translate(-1px, 0);
+    transform: translate(-1px, 0);
+  }
+  80% {
+    -webkit-transform: translate(2px, 0);
+    transform: translate(2px, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate(-4px, 0);
+    transform: translate(-4px, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate(4px, 0);
+    transform: translate(4px, 0);
+  }
+}
+
+@keyframes vibre {
+  0% {
+    -webkit-transform: translate(-1px, 0);
+    transform: translate(-1px, 0);
+  }
+  80% {
+    -webkit-transform: translate(2px, 0);
+    transform: translate(2px, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate(-4px, 0);
+    transform: translate(-4px, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate(4px, 0);
+    transform: translate(4px, 0);
+  }
+}
+
+.foot .mentions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.anima {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: opacity 250ms 50ms, -webkit-transform 300ms;
+  transition: opacity 250ms 50ms, -webkit-transform 300ms;
+  transition: transform 300ms, opacity 250ms 50ms;
+  transition: transform 300ms, opacity 250ms 50ms, -webkit-transform 300ms;
+}
+
+.anima:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.title-1-menu-2, .title-2-menu-2, .title-3-menu-2 {
+  font-family: "Crimson Text";
+}
+
+.title-1-menu-2 {
+  color: #c67412;
+}
+
+.title-2-menu-2 {
+  color: #a56799;
+}
+
+.title-3-menu-2 {
+  color: #6e4ccc;
+}
+
+/* responsive ordi portable*/
+@media all and (min-width: 700px) {
+  /* pages menus*/
+  div {
+    text-align: center;
+    /* pied de page*/
+  }
+  div .menu-1 .menu-2 .menu-3 .menu-4 {
+    -webkit-box-shadow: 0 0 7px #dddddd;
+            box-shadow: 0 0 7px #dddddd;
+    margin: auto;
+  }
+  div .type__plats, div .type__plats3, div .type__plats4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  div .description {
+    font-size: 1em;
+  }
+  div .bart {
+    width: 180px;
+    height: 10px;
+  }
+  div .foot {
+    height: 10px;
+  }
+  div .foot .text {
+    margin-top: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

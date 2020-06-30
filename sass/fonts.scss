@@ -1,0 +1,25 @@
+
+@mixin font1 {
+    font-family: "Devonshire","Lucida Sans Unicode", Arial, sans-serif;
+}
+
+@mixin font2 {
+    font-family: "Kurale";
+}
+
+@mixin font3 {
+    font-family: "Kalam", "cursive"; 
+}
+
+@mixin font4 {
+    font-family: "Trebuchet MS";
+}
+
+@mixin kalam {
+    font-family: "Kalam", "Trebuchet MS", Arial;
+}
+
+@mixin vidaloka {
+    font-family: "Vidaloka";
+}
+
