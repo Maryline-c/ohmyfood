@@ -25,7 +25,7 @@ a {
   font-family: "Montserrat";
   font-size: 0.9em;
   color: #414141;
-  padding: 100px;
+  padding: auto;
 }
 
 header {
@@ -216,9 +216,8 @@ nav .menu_vidaloka__1 {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  width: 50%;
-  margin-left: 20%;
-  margin-top: auto;
+  width: 60%;
+  margin: 50px auto 40px auto;
   padding: 4em;
   -webkit-box-shadow: 0 0 7px #dddddd;
           box-shadow: 0 0 7px #dddddd;
@@ -596,7 +595,7 @@ footer {
     font-size: 1em;
   }
   div .bart {
-    width: 180px;
+    width: 230px;
     height: 10px;
   }
   div .foot {
