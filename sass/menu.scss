@@ -30,3 +30,10 @@
     padding-right: 10%;
     min-height: 890px;
 }
+
+@mixin background-menu {
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
