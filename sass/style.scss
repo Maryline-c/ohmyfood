@@ -21,12 +21,12 @@ a{
   text-align: center;
   font-family: "Montserrat";
   font-size: 0.9em;
-  color: #414141;
+  color: $color-grey;
   padding: auto;
 }
 
 header {
-  background-color: $cd-primary-color;
+  background-color: $primary-color;
   text-align: center;
   padding:1.5em;
       
@@ -34,7 +34,7 @@ header {
   height: 1rem;
   width: auto;
   position: relative;
-  background-color: #579c87;
+  background-color: $primary-color;
 }
 .main-header > a {
   display: block;
@@ -45,7 +45,7 @@ header {
   font-family: "Montserrat", sans-serif;
   font-size: 2.7rem;
   font-weight: 700;
-  color: #fdcb46;
+  color: $font-color;
 }
 .note {
   margin: auto;
@@ -56,7 +56,7 @@ header {
   
 /* navigations menus*/
 .menu_mini {
-  box-shadow: 0 0 7px #dddddd;
+  box-shadow: 0 0 7px $color-light-grey;
   width: 280px;
   height: 400px;
   display: flex;
@@ -92,22 +92,22 @@ li {
   text-align: center;    
 }
 .nav__link__1{
-  background-color: #fcdfdb;
+  background-color: $color-light-red;
   @extend .menu_mini;
   @include font1;
         
 &--2{
-  background-color: #fff5fe;
+  background-color: $color-magenta;
   @extend .menu_mini;
   @include font2;
 }
 &--3{
-  background-color: #eef0f0;
+  background-color: $color-azure;
   @extend .menu_mini;
   @include font3;
 }
 &--4{
-  background-color: #fdfffd;
+  background-color: $color-light-green;
   @extend .menu_mini;
   @include font4;
  }
@@ -124,11 +124,11 @@ li {
 
 .bloc-menu{
 &__1{
-  color: #3c1218;
+  color: $color-rustic-red;
   @extend.menu;
 }
 &__2{
-  background:  linear-gradient(to bottom right, #c67412, #6e4ccc);
+  background:  linear-gradient(to bottom right, $color-orange, $color-violet);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -137,7 +137,7 @@ li {
   @extend.menu;
 }
 &__3{
-  background: linear-gradient(to bottom right, #0431df, #0887fb);
+  background: linear-gradient(to bottom right, $color-blue, $color-light-blue);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -146,7 +146,7 @@ li {
   @extend.menu;
 }
 &__4{
-  background: linear-gradient(to bottom right, #42973c, #bfff7e);
+  background: linear-gradient(to bottom right, $color-green, $color-green-apple);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -159,14 +159,14 @@ li {
 .menu_kalam{
 &__1{
   @extend.menu;
-  color: #3c1218;
+  color: $color-rustic-red;
   font-size: 2.3rem;
   font-family: "Kalam", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
 }
 &__3{
   @extend.menu;
   font-family: "Kalam", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
-  background: linear-gradient(to bottom right, #0431df, #0887fb);
+  background: linear-gradient(to bottom right, $color-blue, $color-light-blue);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -175,7 +175,7 @@ li {
 &__4{
   @extend.menu;
   font-family: "Kalam", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
-  background: linear-gradient(to bottom right, #42973c, #bfff7e);
+  background: linear-gradient(to bottom right, $color-green, $color-green-apple);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -185,7 +185,7 @@ li {
 .menu_vidaloka{
   font-family: "Vidaloka";
 &__1{
-  color: #c67412;
+  color: $color-orange;
   @extend.menu;
   font-size: 2rem;
   } 
@@ -203,7 +203,7 @@ li {
   width: 60%;
   margin: 50px auto 40px auto;
   padding: 4em;
-  box-shadow: 0 0 7px #dddddd;
+  box-shadow: 0 0 7px $color-light-grey;
 }
 
 h2{
@@ -227,14 +227,14 @@ h2{
 }
 
 .menu-1{
-  background-color: #fcdfdb; 
+  background-color: $color-light-red; 
   list-style-type:none;
   @extend .menu_bigtypo;
   @extend .smartmenu;
   @include kalam;
   
 .typo01{
-  color: #3c1218;
+  color: $color-rustic-red;
  }
 }
 .notemusic{
@@ -250,12 +250,12 @@ h2{
 }
 
 .menu-2{
-  background-color: #fff5fe;
+  background-color: $color-magenta;
   @extend .menu_bigtypo;
   @extend .smartmenu;
   @include font2;
 .typo02{
-  background: linear-gradient(to bottom right, #c67412, #6e4ccc);
+  background: linear-gradient(to bottom right, $color-orange, $color-violet);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -266,12 +266,12 @@ h2{
 }
 
 .menu-3{
-  background-color: #eef0f0;
+  background-color: $color-azure;
   @extend .menu_bigtypo;
   @extend .smartmenu;
   @include font3;
 .typo03{
-  background-image: linear-gradient(0.25turn, #0431df, #0887fb);
+  background-image: linear-gradient(0.25turn, $color-blue, $color-light-blue);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -281,20 +281,20 @@ h2{
  }
 }
 .title-1-menu-3, .title-2-menu-3, .title-3-menu-3{
-  color: black;
+  color: $color-titre-black;
   margin-top: 2em;
 }
 .type__plats3{
-  color: black;
+  color: $color-titre-black;
 }
 
 .menu-4{
-  background-color: #fdfffd;
+  background-color: $color-light-green;
   @extend .menu_bigtypo;
   @extend .smartmenu;
   @include font3;
 .typo04{
-  background: linear-gradient(to bottom right, #42973c, #bfff7e);
+  background: linear-gradient(to bottom right, $color-green, $color-green-apple);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -304,11 +304,11 @@ h2{
  }
 }
 .title-1-menu-4, .title-2-menu-4, .title-3-menu-4{
-  color: black;
+  color: $color-titre-black;
   margin-top: 2em;
 }
 .type__plats4{
-  color: black;
+  color: $color-titre-black;
 }
 
 /* Format menu*/
@@ -334,7 +334,7 @@ h2{
 .title-1-menu-3:hover::after,.title-2-menu-3:hover::after,.title-3-menu-3:hover::after,
 .title-1-menu-4:hover::after,.title-2-menu-4:hover::after,.title-3-menu-4:hover::after{
   width: 100%;
-  background: #000000;
+  background: $color-titre-black;
 }
 
 h3::after{
@@ -362,14 +362,14 @@ img {
 .h2-mention{
   font-size: 2em;
   font-family: "Montserrat";
-  color: #000000;
+  color: $color-titre-black;
   margin: 30px 0 30px 0;
 }
 
 /* pied page*/
 .prochainement {
-  background: $cd-primary-color;
-  color: $cd-font-color;
+  background: $primary-color;
+  color: $font-color;
   padding: 10px;
   border-radius: 10px;
   margin: auto;
@@ -404,7 +404,7 @@ img {
 
 /* pied de page*/
 footer{
-  background-color: $cd-primary-color;
+  background-color: $primary-color;
   min-width: 268px;
   position: fixed;
   width: 100%;
@@ -423,7 +423,7 @@ footer{
   height: 50px;
 
 .text{
-  color: $cd-font-color;
+  color: $font-color;
   margin-top: 15px;
 }
 
@@ -491,13 +491,13 @@ footer{
   font-family: "Crimson Text";
 }
 .title-1-menu-2{
-  color:#c67412;
+  color:$color-orange;
 }
 .title-2-menu-2{
-  color:#a56799;
+  color: $color-light-violet;
 }
 .title-3-menu-2{
-  color:#6e4ccc;
+  color: $color-violet;
 }
 /* responsive ordi portable*/
 @media all and (min-width: 700px) {
