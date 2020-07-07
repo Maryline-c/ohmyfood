@@ -129,28 +129,22 @@ li {
 }
 &__2{
   background:  linear-gradient(to bottom right, $color-orange, $color-violet);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  color: transparent;
+  @include background-menu;
   text-align: center;
   padding-top: 60%;
   @extend.menu;
 }
 &__3{
   background: linear-gradient(to bottom right, $color-blue, $color-light-blue);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  color: transparent;
+  @include background-menu;
   padding-top: 60%;
   font-family: "Dancing Script";
   @extend.menu;
 }
 &__4{
   background: linear-gradient(to bottom right, $color-green, $color-green-apple);
-  background-clip: border-box;
-  -webkit-background-clip: text;
+  @include background-menu;
   -webkit-text-fill-color: transparent;
-  color: transparent;
   padding-top: 60%;
   @extend.menu;
  }
@@ -167,18 +161,14 @@ li {
   @extend.menu;
   font-family: "Kalam", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
   background: linear-gradient(to bottom right, $color-blue, $color-light-blue);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  color: transparent;
+  @include background-menu;
   font-size: 2rem;
 }
 &__4{
   @extend.menu;
   font-family: "Kalam", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
   background: linear-gradient(to bottom right, $color-green, $color-green-apple);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  color: transparent;
+  @include background-menu;
   font-size: 2rem;
  }
 }
@@ -256,9 +246,7 @@ h2{
   @include font2;
 .typo02{
   background: linear-gradient(to bottom right, $color-orange, $color-violet);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  color: transparent;
+  @include background-menu; 
 .h2-menu-2{
   @include font2;
   } 
@@ -272,9 +260,7 @@ h2{
   @include font3;
 .typo03{
   background-image: linear-gradient(0.25turn, $color-blue, $color-light-blue);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  color: transparent;
+  @include background-menu; 
 .h2-menu-3{
   font-family: "Dancing Script";
   }
@@ -295,9 +281,7 @@ h2{
   @include font3;
 .typo04{
   background: linear-gradient(to bottom right, $color-green, $color-green-apple);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  color: transparent;
+  @include background-menu; 
 .h2-menu4{
   font-family:"Kaushan Script";
   }
@@ -436,7 +420,7 @@ footer{
            transform: translate(0, 0);
 }
   
-@keyframes vibre {
+@keyframes wiggle {
   0% {
   -webkit-transform: translate(-1px, 0);
         transform: translate(-1px, 0);
